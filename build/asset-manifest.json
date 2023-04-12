@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.99b80dfb.css",
+    "main.js": "/static/js/main.a0c40adb.js",
+    "static/media/Cristiano_Ronaldo_2018__cropped_.jpg": "/static/media/Cristiano_Ronaldo_2018__cropped_.f07220669016968c5d89.jpg",
+    "static/media/signup-image.jpg": "/static/media/signup-image.4b1747c25409451ee32d.jpg",
+    "static/media/login-image.jpg": "/static/media/login-image.75296d1234abba3c4614.jpg",
+    "static/media/75041-twitter-button-3d-flat.mp4": "/static/media/75041-twitter-button-3d-flat.92ab3f015387ecbf8288.mp4",
+    "index.html": "/index.html",
+    "main.99b80dfb.css.map": "/static/css/main.99b80dfb.css.map",
+    "main.a0c40adb.js.map": "/static/js/main.a0c40adb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99b80dfb.css",
+    "static/js/main.a0c40adb.js"
+  ]
+}

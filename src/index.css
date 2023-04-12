@@ -1,13 +1,331 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Shantell+Sans:wght@300;400&display=swap");
+
+* {
+  padding: 0%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.grey {
+  color: rgba(128, 128, 128, 0.595);
+}
+
+/**************************************** login & singup page ****************************************/
+
+.login-body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f1f2f6;
+}
+.login-box {
+  width: 85%;
+}
+.login-img {
+  width: 45%;
+  height: 60rem;
+  border-radius: 0.3rem;
+}
+.login-img img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-content {
+  margin: auto;
+  width: 55%;
+  padding-left: 4rem;
+}
+.login-content h1 {
+  font-size: 3.5rem;
+}
+.login-content form {
+  width: 100%;
+}
+.login-content input {
+  padding: 1rem 1rem;
+  border: 1px solid rgba(185, 185, 185, 0.519);
+  border-radius: 0.3rem;
+  width: 80%;
+}
+.login-content input:focus {
+  outline: none;
+}
+.login-content button {
+  background-color: #2f3542;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  transition: 0.2s linear;
+  color: white;
+}
+.login-content button:hover {
+  cursor: pointer;
+  background-color: #57606f;
+}
+
+/**************************************** Home page ****************************************/
+
+.video-container {
+  width: 6rem;
+  height: 5rem;
+  margin-left: 2rem;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.links section {
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: 0.2s linear;
+}
+
+.links section i,
+.links section p {
+  color: #2f3542;
+}
+
+.links section:hover {
+  box-shadow: #1e8fff41 0px 1px 4px, #1e90ff 0px 0px 0px 3px;
+}
+
+.home-left-section,
+.home-right-section {
+  height: 100vh;
+  border-right: 1px solid rgba(128, 128, 128, 0.341);
+}
+.user-info {
+  margin-top: 64vh;
+}
+
+.home-right-section {
+  padding-right: 3rem;
+  padding-left: 10rem;
+}
+.home-right-top-part button {
+  border: none;
+  padding: 0.5rem 2.7rem;
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 0.3rem;
+  transition: 0.2s linear;
+}
+
+.home-right-top-part button:hover {
+  background-color: #1870c8;
+}
+.textarea-tweet {
+  width: 100%;
+  height: 10rem;
+  border: none;
+}
+.btn-close {
+  background-color: transparent !important;
+  padding-right: 2rem;
+}
+.btn-secondary {
+  background-color: #383a3e !important;
+}
+
+.main-content {
+  height: 90vh;
+  overflow-y: auto;
+}
+.main-content::-webkit-scrollbar {
+  display: none;
+}
+
+.tweet-username:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.tweet-delete {
+  transition: 0.2s linear;
+  color: #d1d1d1;
+}
+.tweet-delete:hover {
+  color: #2f3542 !important;
+  cursor: pointer;
+}
+.tweet-footer,
+.tweet-image,
+.tweet-text {
+  margin-left: 4.3rem;
+  margin-top: 1rem;
+}
+.tweet-image {
+  /* border: 1px solid red; */
+  margin-right: 10.3rem;
+  height: 40rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.tweet-image img {
+  border-radius: 0.3rem;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.tweet-footer section i:hover {
+  cursor: pointer;
+}
+.tweet-container {
+  transition: 0.2s linear;
+}
+.tweet-container:hover {
+  background-color: #eafeff73;
+}
+.is-active {
+  background-color: #d8ecffa2;
+}
+
+/**************************************** Profile page ****************************************/
+
+.profile-section {
+  padding: 0rem 2rem;
+  height: 42rem;
+}
+.profile-section section {
+  background-color: #1e90ff;
+  height: 17rem;
+}
+
+.profile-image,
+.profile-info {
+  position: relative;
+  bottom: 8rem;
+}
+.follow-btn,
+.edit-btn {
+  margin-top: 7rem;
+}
+.follow-btn:hover {
+  cursor: pointer;
+  background-color: #57606f !important;
+}
+.upload-profile-pic-btn {
+  border: 2px solid #383a3eab;
+  color: #383a3e;
+  margin-top: 7rem;
+  position: relative;
+  left: 3vw;
+}
+.upload-profile-pic-btn:hover {
+  border: 2px solid #383a3ee1;
+}
+.modal-body {
+  padding: 0rem 2rem;
+}
+.modal-body input {
+  width: 100%;
+  border: 1px solid rgb(104, 104, 104);
+  font-size: 1.5rem;
+  padding: 0.7rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+/**************************************** Media Queries ****************************************/
+
+@media screen and (max-width: 998px) {
+  html {
+    font-size: 55.5%;
+  }
+
+  .home-body {
+    max-width: 95% !important;
+  }
+  .home-right-section {
+    width: 71% !important;
+  }
+  .tweet-image {
+    margin-right: 5.3rem;
+    height: 34rem;
+  }
+  .user-info {
+    margin-top: 68vh;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  html {
+    font-size: 50.5%;
+  }
+  .home-body {
+    max-width: 100% !important;
+  }
+  .home-right-section {
+    width: 75% !important;
+  }
+  .tweet-image {
+    margin-right: 4.3rem;
+    height: 27rem;
+  }
+  .user-info {
+    margin-top: 72vh;
+  }
+  .main-profile-image {
+    width: 13rem;
+  }
+  .upload-profile-pic-btn,
+  .edit-btn,
+  .follow-btn {
+    margin-top: 9.5rem;
+  }
+  .login-img,
+  .login-content,
+  .login-content input {
+    width: 100%;
+  }
+  .login-img {
+    height: 30rem;
+  }
+  .login-box {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .home-left-section {
+    padding-left: 1rem !important;
+  }
+  .home-right-section {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  .upload-profile-pic-btn,
+  .edit-btn {
+    padding: 0rem 1rem;
+  }
+  .profile-section {
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  html {
+    font-size: 45.5%;
+  }
+  .tweet-image {
+    margin-right: 4.3rem;
+    height: 24rem;
+  }
+  .upload-profile-pic-btn {
+    left: 0rem;
+  }
+  .main-profile-image {
+    width: 9rem;
+  }
 }
